@@ -15,6 +15,10 @@
 		8F1A9B471FC6BCA80009112B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A9B461FC6BCA80009112B /* main.m */; };
 		8F1A9B511FC6BCA80009112B /* MapViewListsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A9B501FC6BCA80009112B /* MapViewListsTests.m */; };
 		8F1A9B5C1FC6BCA80009112B /* MapViewListsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A9B5B1FC6BCA80009112B /* MapViewListsUITests.m */; };
+		8F1A9B6B1FC6BCF60009112B /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A9B6A1FC6BCF60009112B /* MyAnnotation.m */; };
+		8F1A9B6E1FC6BD4C0009112B /* CustomPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A9B6D1FC6BD4C0009112B /* CustomPinAnnotationView.m */; };
+		8F1A9B701FC6C0FB0009112B /* PinData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A9B6F1FC6C0FB0009112B /* PinData.plist */; };
+		8F1A9B731FC6C6580009112B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1A9B721FC6C6580009112B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		8F1A9B571FC6BCA80009112B /* MapViewListsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewListsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1A9B5B1FC6BCA80009112B /* MapViewListsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewListsUITests.m; sourceTree = "<group>"; };
 		8F1A9B5D1FC6BCA80009112B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1A9B691FC6BCF60009112B /* MyAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		8F1A9B6A1FC6BCF60009112B /* MyAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		8F1A9B6C1FC6BD4C0009112B /* CustomPinAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPinAnnotationView.h; sourceTree = "<group>"; };
+		8F1A9B6D1FC6BD4C0009112B /* CustomPinAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPinAnnotationView.m; sourceTree = "<group>"; };
+		8F1A9B6F1FC6C0FB0009112B /* PinData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PinData.plist; sourceTree = "<group>"; };
+		8F1A9B721FC6C6580009112B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1A9B731FC6C6580009112B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,7 @@
 				8F1A9B4F1FC6BCA80009112B /* MapViewListsTests */,
 				8F1A9B5A1FC6BCA80009112B /* MapViewListsUITests */,
 				8F1A9B351FC6BCA80009112B /* Products */,
+				8F1A9B711FC6C6580009112B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +113,15 @@
 		8F1A9B361FC6BCA80009112B /* MapViewLists */ = {
 			isa = PBXGroup;
 			children = (
+				8F1A9B6F1FC6C0FB0009112B /* PinData.plist */,
 				8F1A9B371FC6BCA80009112B /* AppDelegate.h */,
 				8F1A9B381FC6BCA80009112B /* AppDelegate.m */,
 				8F1A9B3A1FC6BCA80009112B /* ViewController.h */,
 				8F1A9B3B1FC6BCA80009112B /* ViewController.m */,
+				8F1A9B691FC6BCF60009112B /* MyAnnotation.h */,
+				8F1A9B6A1FC6BCF60009112B /* MyAnnotation.m */,
+				8F1A9B6C1FC6BD4C0009112B /* CustomPinAnnotationView.h */,
+				8F1A9B6D1FC6BD4C0009112B /* CustomPinAnnotationView.m */,
 				8F1A9B3D1FC6BCA80009112B /* Main.storyboard */,
 				8F1A9B401FC6BCA80009112B /* Assets.xcassets */,
 				8F1A9B421FC6BCA80009112B /* LaunchScreen.storyboard */,
@@ -130,6 +147,14 @@
 				8F1A9B5D1FC6BCA80009112B /* Info.plist */,
 			);
 			path = MapViewListsUITests;
+			sourceTree = "<group>";
+		};
+		8F1A9B711FC6C6580009112B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A9B721FC6C6580009112B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +225,11 @@
 					8F1A9B331FC6BCA80009112B = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8F1A9B4B1FC6BCA80009112B = {
 						CreatedOnToolsVersion = 9.1;
@@ -238,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1A9B701FC6C0FB0009112B /* PinData.plist in Resources */,
 				8F1A9B441FC6BCA80009112B /* LaunchScreen.storyboard in Resources */,
 				8F1A9B411FC6BCA80009112B /* Assets.xcassets in Resources */,
 				8F1A9B3F1FC6BCA80009112B /* Main.storyboard in Resources */,
@@ -267,6 +298,8 @@
 			files = (
 				8F1A9B3C1FC6BCA80009112B /* ViewController.m in Sources */,
 				8F1A9B471FC6BCA80009112B /* main.m in Sources */,
+				8F1A9B6B1FC6BCF60009112B /* MyAnnotation.m in Sources */,
+				8F1A9B6E1FC6BD4C0009112B /* CustomPinAnnotationView.m in Sources */,
 				8F1A9B391FC6BCA80009112B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
